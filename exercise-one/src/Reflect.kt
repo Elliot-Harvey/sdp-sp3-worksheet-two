@@ -3,6 +3,6 @@ fun main(args: Array<String>) {
         println("Requires a class name as argument to program")
         System.exit(-1)
     }
-
-    // TODO
+    var theClass = Class.forName(args.get(0))
+    theClass.getInterfaces().forEach{x -> println(x)}
 }
