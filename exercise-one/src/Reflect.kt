@@ -4,5 +4,6 @@ fun main(args: Array<String>) {
         System.exit(-1)
     }
     var theClass = Class.forName(args.get(0))
+    println(theClass.name + " interfaces:")
     theClass.getInterfaces().forEach{x -> println(x)}
 }
